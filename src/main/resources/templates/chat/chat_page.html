@@ -1,0 +1,53 @@
+<html>
+<head>
+
+	<title>Переписка</title>
+	<meta name="viewport" content="width=device-width"/>
+
+	<link rel="shortcut icon" href="#">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	
+	<script type="text/javascript" src="js/chat_page.js"></script>
+	<script type="text/javascript" src="js/notification.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/zero.css">
+	<link rel="stylesheet" type="text/css" href="css/chat_page.css">
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="content"> OAKTREES </div>
+	</div>
+	OAKTREES
+	
+	<div class="content">
+		<div class="canvas">
+			<div class="left_corner">
+				<ul class="menu_list">
+					<li>Переписки <span id="chats_count"></span></li>
+					<li>Переписки</li>
+					<li>...</li>
+				</ul>
+			</div>
+			<div class="center" id="center">
+				<div class="dialog_info">
+					<span id="title"></span>
+				</div>
+				<div class="dialog_messages" id="messages_area">
+				
+				</div>
+				<div class="dialog_input" id="dialog_input">
+					<span class="input_button"><button>#</button></span>
+					<span class="input_span"><textarea id="textarea"onkeydown = "if (event.keyCode == 13) send()"></textarea></span>
+					<span class="input_button"><button id="send" onclick='send()'> > </button></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

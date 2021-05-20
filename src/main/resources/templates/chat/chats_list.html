@@ -1,0 +1,55 @@
+<html>
+<head>
+
+	<title>Переписки</title>
+	<meta name="viewport" content="width=device-width"/>
+
+	<link rel="shortcut icon" href="#">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	
+	<script type="text/javascript" src="js/chat_list_page.js"></script>
+	<script type="text/javascript" src="js/notification.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/zero.css">
+	<link rel="stylesheet" type="text/css" href="css/chat_page.css">
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="content"> OAKTREES </div>
+	</div>
+	OAKTREES
+	
+	<div class="content">
+		<div class="canvas">
+			<div class="left_corner">
+				<ul class="menu_list">
+					<li>Переписки <span id="chats_count"></span></li>
+					<li>Переписки</li>
+					<li>...</li>
+				</ul>
+			</div>
+			<div class="center" id="center">
+				<div class="dialog_info">
+					<span id="title">Переписки</span>
+				</div>
+				<div class="dialog">
+					<div class="dialog_name">
+					<span class="name">Пример</span>
+					<span class="time">13:33</span>
+					</div>
+					<div class="dialog_message">
+					<span class="last_writer">Толя</span>
+					<span class="text">Это тут только для дебага</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
